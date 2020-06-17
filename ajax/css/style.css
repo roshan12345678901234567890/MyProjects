@@ -1,0 +1,94 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+form {
+    margin: 0 auto;
+}
+label {
+    color: white;
+    width: 100%;
+    display: inline-block;
+    margin-top: 1em;
+}
+input {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 1em;
+    font-size:1em;
+}
+
+.main-form-container {
+    width: 50%;
+    margin: 0 auto;
+}
+.main-contact-form-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.form-header h1{
+    text-align: center;
+}
+.main-form-header {
+    text-align: center;
+}
+
+label#main {
+    color: black;
+    font-size: 1.2em;
+}
+.name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+.fname {
+    width: 48%;
+}
+
+.lname {
+    width: 48%;
+}
+.phone {
+    width: 48%;
+}
+
+.mail {
+    width: 48%;
+}
+.main-form-body {
+    padding-top: 2em;
+}
+.success {
+    display: none;
+    background: #007eff;
+    padding: 5em;
+	color :white;
+}
+input[type="submit"] {
+    background: #007eff;
+    border: none;
+    color: white;
+}
+@media only screen and (max-width:700px){
+ 
+    .main-form-container{
+        width: 80%;
+    }
+    .name,.contact-details{
+        flex-direction: column;
+    }
+    .fname,.lname,.phone,.mail{
+        width: 100%;
+    }
+
+}

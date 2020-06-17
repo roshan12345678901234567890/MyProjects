@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+a , button{
+    cursor: pointer;
+}
+section#signup-parent-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+}
+.sing-image-container {
+    width: 50%;
+    margin-top: 7em;
+    margin-left: 7em;
+}
+.sing-form-container {
+    width: 40%;
+    margin: 0 auto;
+    background: #8eedc7;
+    padding: 2em 5em;
+}
+.sign-up-header,.login-header h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 0.5em;
+}
+div#camera {
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    top: 8em;
+    left: 4.7em;
+}
+.sign-up-header p,span {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 0.2em;
+}
+
+input#upload-profile {
+    position: relative;
+    top: -106px;
+    opacity: 0;
+}
+small {font-size: 15px;font-family: sans-serif;text-align: center;margin-left: 3.3em;}
+.center img {border-radius: 8em;}
+.upload-profile-image {
+    width: 50%;
+}
+.upload-profile-image {
+    display: flex;
+    flex-direction: column;
+}
+.form-row {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+button {
+    width: 100px;
+    border: none;
+    padding: 1em 1em;
+    text-align: center;
+    background: #fb6020;
+    color: white;
+    font-size: 15px;
+}
+form#reg-form {margin-top: -0.3em;}
+section#login-form {
+    background: #8eedc7;
+    width: 40%;
+    margin: 0 auto;
+    padding: 5em;
+    margin-top: 2em;
+    z-index: 1;
+    position: relative;
+}
+.login-image {margin: 1em auto;}
+.profile-container {
+    width: 50%;
+    background: #8eedc7;
+    padding: 3em;
+    margin: 0 auto;
+}
+form small {
+    margin-left: 0;
+    color: #fb6020;
+    font-size: 18px;
+}
+
+
+p#error {
+    color: #fb6020;
+    z-index: 10;
+    position: fixed;
+    margin-left: 17em;
+    margin-top: 2em;
+    font-size: 28px;
+}
+p#error_reg {
+    color: #fb6020;
+    z-index: 10;
+    position: fixed;
+    margin-left: 6em;
+    margin-top: 2em;
+    font-size: 28px;
+}
+@media only screen and (max-width: 980px) {
+
+    .sing-image-container {
+        margin-left: 1em;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+.sing-image-container {
+    display: none;
+}
+.sing-form-container {width: 100%;}
+section#login-form {
+    width: auto;
+    padding: 1em;
+    margin-top:0;
+    height: 100vh;
+}
+.login-form {
+    width: 95%;
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+.upload-profile-image{
+    width:auto;
+}
+.sign-up-header p a {
+    z-index: 11111111111111;
+}
+}
